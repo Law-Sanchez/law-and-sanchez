@@ -17,7 +17,7 @@ export default function Home() {
     <Stack>
       <Stack align="center">
         <Card withBorder shadow="sm" h={300} w={300} radius={200} p={0}>
-          <Image src="/my-site/images/ljz.png" />
+          <Image src="/law-and-sanchez/images/ljz.png" />
         </Card>
         <Text
           size="50px"
@@ -37,32 +37,32 @@ export default function Home() {
         <Title>Projects</Title>
         <SimpleGrid cols={3}>
           <ProjectCard
-            src="/my-site/images/ezcheck.png"
+            src="/law-and-sanchez/images/ezcheck.png"
             title="EZCheck"
             description="A novel authentication IoT system to secure maker lab tools."
           />
           <ProjectCard
-            src="/my-site/images/ezfind.png"
+            src="/law-and-sanchez/images/ezfind.png"
             title="EZFind"
             description="A novel inventory finding and tracking system."
           />
           <ProjectCard
-            src="/my-site/images/underwater360.png"
+            src="/law-and-sanchez/images/underwater360.png"
             title="Underwater360"
             description="A novel authentication IoT system to secure maker lab tools."
           />
           <ProjectCard
-            src="/my-site/images/flysafe.png"
+            src="/law-and-sanchez/images/flysafe.png"
             title="FlySafe"
             description="Cheapest, modern AGL plane flight altimeter."
           />
           <ProjectCard
-            src="/my-site/images/underwater360.png"
+            src="/law-and-sanchez/images/underwater360.png"
             title="Underwater360"
             description="A novel authentication IoT system to secure maker lab tools."
           />
           <ProjectCard
-            src="/my-site/images/underwater360.png"
+            src="/law-and-sanchez/images/underwater360.png"
             title="Underwater360"
             description="A novel authentication IoT system to secure maker lab tools."
           />
@@ -70,17 +70,17 @@ export default function Home() {
         <Title>Minis</Title>
         <SimpleGrid cols={3}>
           <ProjectCard
-            src="/my-site/images/ezcheck.png"
+            src="/law-and-sanchez/images/ezcheck.png"
             title="EZCheck"
             description="A novel authentication IoT system to secure maker lab tools."
           />
           <ProjectCard
-            src="/my-site/images/ezcheck.png"
+            src="/law-and-sanchez/images/ezcheck.png"
             title="EZCheck"
             description="A novel authentication IoT system to secure maker lab tools."
           />
           <ProjectCard
-            src="/my-site/images/ezcheck.png"
+            src="/law-and-sanchez/images/ezcheck.png"
             title="EZCheck"
             description="A novel authentication IoT system to secure maker lab tools."
           />
