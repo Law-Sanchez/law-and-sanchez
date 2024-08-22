@@ -17,7 +17,7 @@ export default function Home() {
     <Stack>
       <Stack align="center">
         <Card withBorder shadow="sm" h={300} p={0}>
-          <Image src="/law-and-sanchez/images/car.png" />
+          <Image src="/images/car.png" />
         </Card>
         <Text
           size="50px"
@@ -28,7 +28,6 @@ export default function Home() {
         >
           Law and Sanchez
         </Text>
-
         <Text size="25px" h="30px" fw={400} c="red">
           Automotive service... unlike any other
         </Text>
