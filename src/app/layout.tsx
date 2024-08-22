@@ -8,8 +8,8 @@ import Layout from "@/components/Layout";
 import { Notifications } from "@mantine/notifications";
 
 export const metadata = {
-  title: "Water360",
-  description: "Reliable 360 Camera Remote Control",
+  title: "Law & Sanchez",
+  description: "Automotive Repair Company",
 };
 
 export default function RootLayout({

@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <Stack>
       <Stack align="center">
-        <Card withBorder shadow="sm" h={300} w={300} radius={200} p={0}>
-          <Image src="/law-and-sanchez/images/ljz.png" />
+        <Card withBorder shadow="sm" h={300} p={0}>
+          <Image src="/law-and-sanchez/images/car.png" />
         </Card>
         <Text
           size="50px"
@@ -26,65 +26,15 @@ export default function Home() {
           variant="gradient"
           gradient={{ from: "red", to: "orange", deg: 90 }}
         >
-          Lucas Zheng
+          Law and Sanchez
         </Text>
 
         <Text size="25px" h="30px" fw={400} c="red">
-          Problem solver and programmer
+          Automotive service... unlike any other
         </Text>
       </Stack>
       <Stack pl={"xl"}>
-        <Title>Projects</Title>
-        <SimpleGrid cols={3}>
-          <ProjectCard
-            src="/law-and-sanchez/images/ezcheck.png"
-            title="EZCheck"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
-          <ProjectCard
-            src="/law-and-sanchez/images/ezfind.png"
-            title="EZFind"
-            description="A novel inventory finding and tracking system."
-          />
-          <ProjectCard
-            src="/law-and-sanchez/images/underwater360.png"
-            title="Underwater360"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
-          <ProjectCard
-            src="/law-and-sanchez/images/flysafe.png"
-            title="FlySafe"
-            description="Cheapest, modern AGL plane flight altimeter."
-          />
-          <ProjectCard
-            src="/law-and-sanchez/images/underwater360.png"
-            title="Underwater360"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
-          <ProjectCard
-            src="/law-and-sanchez/images/underwater360.png"
-            title="Underwater360"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
-        </SimpleGrid>
-        <Title>Minis</Title>
-        <SimpleGrid cols={3}>
-          <ProjectCard
-            src="/law-and-sanchez/images/ezcheck.png"
-            title="EZCheck"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
-          <ProjectCard
-            src="/law-and-sanchez/images/ezcheck.png"
-            title="EZCheck"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
-          <ProjectCard
-            src="/law-and-sanchez/images/ezcheck.png"
-            title="EZCheck"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
-        </SimpleGrid>
+        <Title>Services</Title>
       </Stack>
     </Stack>
   );
