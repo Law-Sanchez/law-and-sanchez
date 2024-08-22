@@ -29,7 +29,7 @@ export default function Home() {
           Law and Sanchez
         </Text>
         <Text size="25px" h="30px" fw={400} c="red">
-          Automotive service... unlike any other
+          Automotive repairs, delivered
         </Text>
       </Stack>
       <Stack pl={"xl"}>
