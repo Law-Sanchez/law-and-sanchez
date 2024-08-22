@@ -65,7 +65,8 @@ export default function FeaturesGrid() {
       <Title className={classes.title}> GENERAL MAINTENANCE</Title>
 
       <Container size={560} p={0}>
-        <Text size="sm" className={classes.description}>
+        <Text size="md" className={classes.description}>
+        <br />
         Regular automobile maintenance is crucial for ensuring the longevity
         and safety of your vehicle. We understand the importance of these practices
         and aim to provide you quick, high quality services across the board.
