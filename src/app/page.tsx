@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <Stack>
       <HeroImageRight />
-      <Text>Hello world</Text>
+      <Text></Text>
       <ContactUs></ContactUs>
     </Stack>
   );

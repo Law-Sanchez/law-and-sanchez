@@ -9,7 +9,7 @@ import { Notifications } from "@mantine/notifications";
 
 export const metadata = {
   title: "Law & Sanchez",
-  description: "Automotive Repair Company",
+  description: "Mobile Automotive Repair",
 };
 
 export default function RootLayout({
