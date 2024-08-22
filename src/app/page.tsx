@@ -1,4 +1,5 @@
 "use client";
+import { ContactUs } from "@/components/ContactUs/ContactUs";
 import { HeroImageRight } from "@/components/HeroImageRight";
 import ProjectCard from "@/components/ProjectCard";
 import {
@@ -17,6 +18,12 @@ export default function Home() {
   return (
     <Stack>
       <HeroImageRight />
+      <Text>
+        Hello world 
+      </Text>
+      <ContactUs>
+        
+      </ContactUs>
     </Stack>
   );
 }
