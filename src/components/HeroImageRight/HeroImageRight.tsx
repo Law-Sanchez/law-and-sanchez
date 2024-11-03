@@ -17,11 +17,10 @@ export function HeroImageRight() {
               >
                 Delivered
               </Text>{" "}
-              
             </Title>
 
             <Text className={classes.description} mt={30}>
-              We aim to bring  
+              We bring high quality car repairs to you!
             </Text>
 
             <Button
@@ -31,7 +30,7 @@ export function HeroImageRight() {
               className={classes.control}
               mt={40}
             >
-              Book Now
+              Schedule Service
             </Button>
           </div>
         </div>

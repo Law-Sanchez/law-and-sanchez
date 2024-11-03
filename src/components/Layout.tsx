@@ -37,7 +37,16 @@ import {
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Header } from "./Header/Header";
+import { FooterLinks } from "./Footer/FooterLinks";
+import { FooterSocial } from "./Footer/FooterSocial";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <Header />
+      {children}
+      <FooterSocial />
+    </>
+  );
 }
