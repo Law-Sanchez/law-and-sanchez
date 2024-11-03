@@ -72,7 +72,7 @@ export function GetInTouch() {
         {...form.getInputProps("subject")}
       />
 
-      <Group position="center" mt="xl">
+      <Group ta="center" mt="xl">
         <Button type="submit" size="md">
           Send message
         </Button>

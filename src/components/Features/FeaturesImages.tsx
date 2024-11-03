@@ -43,7 +43,7 @@ export function FeaturesImages() {
         size={60}
         radius="md"
       >
-        <Image src={IMAGES[item.image]} />
+        {/* <Image src={IMAGES[item.image]} /> */}
       </ThemeIcon>
 
       <div>

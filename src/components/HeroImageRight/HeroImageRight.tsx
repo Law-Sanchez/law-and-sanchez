@@ -1,7 +1,9 @@
 import { Container, Title, Text, Button } from "@mantine/core";
 import classes from "./HeroImageRight.module.css";
+import { useRouter } from "next/navigation";
 
 export function HeroImageRight() {
+  const router = useRouter();
   return (
     <div className={classes.root}>
       <Container size="lg">
@@ -29,6 +31,7 @@ export function HeroImageRight() {
               size="xl"
               className={classes.control}
               mt={40}
+              onClick={() => router.push("/schedule")}
             >
               Schedule Service
             </Button>
