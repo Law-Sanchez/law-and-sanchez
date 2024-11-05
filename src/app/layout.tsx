@@ -7,6 +7,7 @@ import "@mantine/dates/styles.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import Layout from "@/components/Layout";
 import { Notifications } from "@mantine/notifications";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Law & Sanchez",
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Notifications />
           <Layout>{children}</Layout>
         </MantineProvider>
+        <GoogleAnalytics gaId="G-WYQHH7M889" />
       </body>
     </html>
   );
