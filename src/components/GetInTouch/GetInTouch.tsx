@@ -29,7 +29,7 @@ export function GetInTouch() {
         order={2}
         size="h1"
         // sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}` })}
-        fw={900}
+        // fw={900}
         // align="center"
       >
         Get in touch

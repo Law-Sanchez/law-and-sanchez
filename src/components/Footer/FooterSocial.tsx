@@ -1,4 +1,4 @@
-import { Container, Group, ActionIcon, rem, Box } from "@mantine/core";
+import { Container, Group, ActionIcon, rem, Box, Image } from "@mantine/core";
 import {
   IconBrandTwitter,
   IconBrandYoutube,
@@ -11,7 +11,7 @@ export function FooterSocial() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        {/* <MantineLogo size={28} /> */}
+        <Image src="/images/logo/logo.png" w={150} c={"white"} />
         <Box size={28} />
         <Group
           gap={0}

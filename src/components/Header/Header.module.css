@@ -15,7 +15,6 @@
   height: 100%;
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
-  text-decoration: none;
   color: var(--mantine-color-white);
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
@@ -24,7 +23,8 @@
     height: rem(42px);
     width: 100%;
   }
-
+  border-radius: 10px;
+  background-color: var(--mantine-color-red-5);
   @mixin hover {
     background-color: var(--mantine-color-red-7);
   }

@@ -15,22 +15,22 @@ import {
   Divider,
   SimpleGrid,
   Container,
+  Button,
 } from "@mantine/core";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <Stack>
-      <HeroImageRight />
-      <Text></Text>
-      {/* <ContactUs></ContactUs> */}
-      {/* <Image src={"images/logo/logo.png"}></Image> */}
-      <Container w={"100%"}>
-        <Service />
-        <Box h={50}></Box>
-        <Team />
-        <Box h={50}></Box>
-        <GetInTouch />
-      </Container>
+      <Text>Hello</Text>
+      <Button
+        onClick={() => {
+          router.push("/write");
+        }}
+      >
+        Click
+      </Button>
     </Stack>
   );
 }

@@ -16,6 +16,7 @@ import {
   ScrollArea,
   rem,
   useMantineTheme,
+  Stack,
 } from "@mantine/core";
 // import { MantineLogo } from '@mantinex/mantine-logo';
 import { useDisclosure } from "@mantine/hooks";
@@ -29,66 +30,50 @@ import {
   IconChevronDown,
 } from "@tabler/icons-react";
 import classes from "./Header.module.css";
+import { useRouter } from "next/navigation";
 
-const mockdata = [
+const linkData = [
   {
-    icon: IconCode,
-    title: "Open source",
-    description: "This Pokémon’s cry is very loud and distracting",
+    title: "About",
+    link: "/",
   },
   {
-    icon: IconCoin,
-    title: "Free for everyone",
-    description: "The fluid of Smeargle’s tail secretions changes",
+    title: "Schedule",
+    link: "/schedule",
+  },
+
+  {
+    title: "Blog",
+    link: "/blog",
   },
   {
-    icon: IconBook,
-    title: "Documentation",
-    description: "Yanma is capable of seeing 360 degrees without",
-  },
-  {
-    icon: IconFingerprint,
-    title: "Security",
-    description: "The shell’s rounded shape and the grooves on its.",
-  },
-  {
-    icon: IconChartPie3,
-    title: "Analytics",
-    description: "This Pokémon uses its flying ability to quickly chase",
-  },
-  {
-    icon: IconNotification,
-    title: "Notifications",
-    description: "Combusken battles with the intensely hot flames it spews",
+    title: "Page 4",
+    link: "/",
   },
 ];
 
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
-  const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
 
-  const links = mockdata.map((item) => (
-    <UnstyledButton className={classes.subLink} key={item.title}>
-      <Group wrap="nowrap" align="flex-start">
-        <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon
-            style={{ width: rem(22), height: rem(22) }}
-            color={theme.colors.blue[6]}
-          />
-        </ThemeIcon>
-        <div>
-          <Text size="sm" fw={500}>
-            {item.title}
-          </Text>
-          <Text size="xs" c="dimmed">
-            {item.description}
-          </Text>
-        </div>
-      </Group>
-    </UnstyledButton>
-  ));
+  const router = useRouter();
+
+  function links(burger: boolean) {
+    return linkData.map((item, id) => (
+      <UnstyledButton
+        className={classes.link}
+        key={id}
+        onClick={(event) => {
+          event.preventDefault();
+          router.push(item.link);
+          if (burger) toggleDrawer();
+        }}
+      >
+        {item.title}
+      </UnstyledButton>
+    ));
+  }
 
   return (
     <header className={classes.header}>
@@ -97,18 +82,7 @@ export function Header() {
         <Box size={30} />
 
         <Group h="100%" gap={0} visibleFrom="sm">
-          <a href="/" className={classes.link}>
-            Home
-          </a>
-          <a href="#" className={classes.link}>
-            Features
-          </a>
-          <a href="#" className={classes.link}>
-            Learn
-          </a>
-          <a href="#" className={classes.link}>
-            Academy
-          </a>
+          {links(false)}
         </Group>
 
         <Group visibleFrom="sm">
@@ -116,8 +90,24 @@ export function Header() {
           <Button>Sign up</Button> */}
         </Group>
 
-        <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+        <Burger
+          opened={drawerOpened}
+          onClick={toggleDrawer}
+          hiddenFrom="sm"
+          color="white"
+        />
       </Group>
+      <Drawer
+        opened={drawerOpened}
+        onClose={toggleDrawer}
+        position={"right"}
+        offset={8}
+        radius={"md"}
+        size={"sm"}
+        style={{ backgroundClip: "red" }}
+      >
+        <Stack>{links(true)}</Stack>
+      </Drawer>
     </header>
   );
 }
