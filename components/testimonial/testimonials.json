@@ -1,0 +1,46 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "location": "Austin, TX",
+      "testimonial": "This shop fixed my car quickly and at a fair price. My vehicle runs better than ever!",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sophia Lee",
+      "location": "Miami, FL",
+      "testimonial": "The team was professional and explained everything clearly. My car was ready in no time!",
+      "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "location": "Seattle, WA",
+      "testimonial": "They diagnosed the issue with my car accurately and had it fixed the same day. Highly recommend!",
+      "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "location": "Chicago, IL",
+      "testimonial": "Great service! They went above and beyond to get my car back on the road quickly.",
+      "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Daniel Martinez",
+      "location": "Phoenix, AZ",
+      "testimonial": "Best auto repair shop I've been to! Honest pricing and excellent customer service.",
+      "avatar": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Jane Smith",
+      "location": "Denver, CO",
+      "testimonial": "The staff was friendly, and my car was repaired perfectly. I'll definitely be back!",
+      "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+    }
+  ]
+}

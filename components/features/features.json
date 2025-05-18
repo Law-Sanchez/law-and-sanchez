@@ -1,0 +1,25 @@
+{
+  "features": [
+    {
+      "category": "Repair Services",
+      "title": "Expert Diagnostics and Repairs",
+      "details": "Our skilled technicians use advanced tools to diagnose and fix your vehicle quickly. From engine repairs to brake services, we handle it all with precision.",
+      "src": "/images/body/random-1.jpg",
+      "tutorialLink": "#"
+    },
+    {
+      "category": "Customer Convenience",
+      "title": "Hassle-Free Appointment Booking",
+      "details": "Schedule your repair online or by phone with flexible time slots. Enjoy same-day service and updates on your vehicle's repair status in real-time.",
+      "src": "/images/body/random-2.jpg",
+      "tutorialLink": "#"
+    },
+    {
+      "category": "Quality Assurance",
+      "title": "Guaranteed Parts and Service",
+      "details": "We use only high-quality parts with warranties, ensuring your car runs smoothly. Our repairs come with a satisfaction guarantee for your peace of mind.",
+      "src": "/images/body/random-3.jpg",
+      "tutorialLink": "#"
+    }
+  ]
+}
