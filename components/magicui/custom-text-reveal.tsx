@@ -31,7 +31,7 @@ export const TextReveal: FC<TextRevealProps> = ({
           loop
           muted
           playsInline
-          className="absolute z-[-2] h-[100%]"
+          className="absolute z-[-2] h-[100%] object-cover"
         >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
