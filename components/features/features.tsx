@@ -30,11 +30,11 @@ const Features06Page = () => {
               <Image
                 src={feature.src}
                 width={300}
-                height={300}
+                height={100}
                 alt="hello"
-                className="w-full bg-muted rounded-xl border border-border/50 basis-1/2"
+                className="rounded-xl border "
+                // style={{ objectFit: "fill" }}
               />
-
               <div className="basis-1/2 shrink-0">
                 <span className="uppercase font-semibold text-sm text-muted-foreground">
                   {feature.category}

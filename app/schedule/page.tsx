@@ -28,11 +28,12 @@ export default function Page() {
     <div className="min-h-screen bg-muted">
       <Navbar04Page />
       <div className="h-32"></div>
-      <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-xl md:text-center md:mx-auto">
+      <h2 className="text-4xl md:text-5xl font-bold tracking-tight max-w-xl text-center mx-auto">
         Book an Appointment
       </h2>
-      <div className="px-32 py-20">
-        <Card className="p-0 w-full shadow-none border-none">
+      <div className="h-16"></div>
+      <div className="w-full px-8 flex justify-center">
+        <Card className="p-0 w-200 shadow-none border-none">
           <MagicCard gradientColor={"#D9D9D955"} className="p-0">
             {/* <CardHeader className="border-b border-border p-4 [.border-b]:pb-4">
             <CardTitle>Login</CardTitle>
