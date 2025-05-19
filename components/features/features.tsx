@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import featuresData from "./features.json";
+import { RainbowButton } from "../magicui/rainbow-button";
+import { ShimmerButton } from "../magicui/shimmer-button";
 
 const Features06Page = () => {
   return (
@@ -11,6 +13,14 @@ const Features06Page = () => {
         <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-xl md:text-center md:mx-auto">
           Automotive Repairs, Delivered to You
         </h2>
+        <div className="flex justify-center w-full mt-10">
+          {/* <RainbowButton size={"lg"}  variant={"outline"}>
+            Book an appointment!
+          </RainbowButton> */}
+          <Link href={"/schedule"}>
+            <ShimmerButton>Book an Appointment Now!</ShimmerButton>
+          </Link>
+        </div>
         <div className="mt-8 md:mt-16 w-full mx-auto space-y-20">
           {featuresData.features.map((feature) => (
             <div
@@ -35,14 +45,14 @@ const Features06Page = () => {
                 <p className="text-muted-foreground text-[17px]">
                   {feature.details}
                 </p>
-                <Button
+                {/* <Button
                   asChild
                   className="mt-6 rounded-full min-w-40 text-[15px]"
                 >
                   <Link href={feature.tutorialLink}>
                     Learn More <ArrowRight />
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}
