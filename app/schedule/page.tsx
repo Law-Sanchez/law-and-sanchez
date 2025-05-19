@@ -99,7 +99,7 @@ export default function Page() {
                             const minute_str = minute
                               .toString()
                               .padStart(2, "0");
-                            var timeValue = `${hour_str}:${minute_str} AM`;
+                            let timeValue = `${hour_str}:${minute_str} AM`;
                             if (hour > 12) {
                               timeValue = `${hour_str}:${minute_str} PM`;
                             }

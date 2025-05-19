@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { motion } from "framer-motion"
-import { cn } from "@/lib/utils"
-import { useTheme } from "next-themes"
+import * as React from "react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+// import { useTheme } from "next-themes"
 
 interface MarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
-  text: string
-  repeat?: number
-  duration?: number
-  fontSize?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl"
-  strokeWidth?: string
+  text: string;
+  repeat?: number;
+  duration?: number;
+  fontSize?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
+  strokeWidth?: string;
 }
 
 const fontSizeClasses = {
@@ -20,28 +20,29 @@ const fontSizeClasses = {
   xl: "text-8xl sm:text-9xl md:text-[10rem]",
   "2xl": "text-9xl sm:text-[10rem] md:text-[11rem]",
   "3xl": "text-[10rem] sm:text-[11rem] md:text-[12rem]",
-}
+};
 
 export const Marquee = React.forwardRef<HTMLDivElement, MarqueeProps>(
-  ({
-    className,
-    text,
-    repeat = 4,
-    duration = 20,
-    fontSize = "lg",
-    strokeWidth = "1px",
-    ...props
-  }, ref) => {
-    const { theme } = useTheme()
-    const isDark = theme === "dark"
+  (
+    {
+      className,
+      text,
+      repeat = 4,
+      duration = 20,
+      fontSize = "lg",
+      strokeWidth = "1px",
+      ...props
+    },
+    ref
+  ) => {
+    // const { theme } = useTheme()
+    // const isDark = theme === "dark"
+    const isDark = false;
 
     return (
       <div
         ref={ref}
-        className={cn(
-          "relative w-screen overflow-hidden py-16",
-          className
-        )}
+        className={cn("relative w-screen overflow-hidden py-16", className)}
         {...props}
       >
         <>
@@ -50,12 +51,12 @@ export const Marquee = React.forwardRef<HTMLDivElement, MarqueeProps>(
         </>
         <motion.div
           className="flex whitespace-nowrap"
-          animate={{ 
-            x: ["0%", "-50%"]
+          animate={{
+            x: ["0%", "-50%"],
           }}
-          transition={{ 
-            repeat: Number.POSITIVE_INFINITY, 
-            ease: "linear", 
+          transition={{
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "linear",
             duration,
           }}
         >
@@ -67,7 +68,9 @@ export const Marquee = React.forwardRef<HTMLDivElement, MarqueeProps>(
                   "font-bold text-transparent px-4"
                 )}
                 style={{
-                  WebkitTextStroke: `${strokeWidth} ${isDark ? 'rgb(64 64 64)' : 'rgb(156 163 175)'}`,
+                  WebkitTextStroke: `${strokeWidth} ${
+                    isDark ? "rgb(64 64 64)" : "rgb(156 163 175)"
+                  }`,
                 }}
               >
                 {text}
@@ -76,8 +79,8 @@ export const Marquee = React.forwardRef<HTMLDivElement, MarqueeProps>(
           ))}
         </motion.div>
       </div>
-    )
+    );
   }
-)
+);
 
-Marquee.displayName = "Marquee"
+Marquee.displayName = "Marquee";
